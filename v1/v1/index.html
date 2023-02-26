@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>RACESPORT</title>
+    <link rel="stylesheet" href="assets/css/carousel.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="fixed-top shadow-sm bg-white">
+        <div class="container-page p-0">
+            <nav id="navbar" class="navbar navbar-expand-lg custom-nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="assets/images/logo.png" alt="logo"></h1>
+                    </a>
+                    <button class="navbar-toggler p-0 border-0" id="navToggle" type="button" data-toggle="offcanvas">
+                        <span id="navbar-hamburger">
+                            <i class="ti ti-menu"></i>
+                        </span>
+                        <span id="navbar-close" class="d-none">
+                            <i class="ti ti-close"></i>
+                        </span>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a> </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" id="drivers" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Drivers
+                                </a>
+                                <div class="dropdown-menu c-dropdown shadow-sm megamenu teams pb-1" role="menu"
+                                    aria-labelledby="drivers">
+                                    <h2 class="menu-title">Drivers</h2>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Max Verstappen<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Red Bull Racing</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">1</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Fernando Alonso<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Aston Martin</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">14</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Kevin Magnussen<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Haas F1 Team</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">20</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">George Russell<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Mercedes</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">63</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Lewis Hamilton<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Mercedes</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">44</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Valtteri Bottas<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Alfa Romeo</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">77</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Guanyu Zhou<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Alfa Romeo</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">24</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Nyck De Vries<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">AlphaTauri</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">45</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Yuki Tsunoda<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">AlphaTauri</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">22</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Lance Stroll<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Aston Martin</p>
+                                                <div class="rank">Rank <span class="badge rounded-pill">18</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" id="teams" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Teams
+                                </a>
+                                <div class="dropdown-menu c-dropdown shadow-sm megamenu teams pb-1" role="menu"
+                                    aria-labelledby="teams">
+                                    <h2 class="menu-title">Teams</h2>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Mercedes<em class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Mercedes-AMG PETRONAS Formula One Team</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Aston Martin<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Aston Martin Aramco Cognizant Formula One Team</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Williams<em class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Williams Racing</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Alfa Romeo<em
+                                                        class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Alfa Romeo F1 Team Stake</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Red Bull<em class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">Oracle Red Bull Racing</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                            <a href="#" class="t-card">
+                                                <h4 class="menu-title-level">Haas<em class="ti ti-angle-right"></em>
+                                                </h4>
+                                                <p class="t-info">MoneyGram Haas F1 Team</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Live Score</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- /NAVBAR  f-->
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <main class="main-container">
+        <section class="banner">
+            <div class="container-page">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="slider" class="d-none">
+                            <div class="owl-carousel slider owl-theme controls-position">
+                                <div><img src="assets/images/home/s1.jpg" alt="s1"></div>
+                                <div><img src="assets/images/home/s2.jpg" alt="s2"></div>
+                                <div><img src="assets/images/home/s3.jpg" alt="s3"></div>
+                            </div>
+                        </div>
+                        <!-- /SLIDER -->
+                        <div class="video-wrap">
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/PSLTXPefVGE" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <!-- /VIDEO PLAYER-->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="driver-ranks">
+                            <h2 class="font-20 text-primary text-uppercase">Drivers Leaderboard - 2023</h2>
+                            <div class="rank-card">
+                                <a href="#">
+                                    <div class="r-number bg-success d-flex align-items-center justify-content-center">1
+                                    </div>
+                                    <div class="r-card-info d-flex">
+                                        <div class="r-photo">
+                                            <img src="assets/images/drivers/d1.png" alt="d1">
+                                        </div>
+                                        <div class="rank-info">
+                                            <h4 class="font-weight-bold text-primary mb-0">Max Verstappen</h4>
+                                            <p><strong>Team: </strong>Red Bull Racing</p>
+                                            <p><strong>Date of birth: </strong>30/09/1997</p>
+                                            <p><strong>Country: </strong>Netherlands</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="rank-card">
+                                <a href="#">
+                                    <div class="r-number bg-info d-flex align-items-center justify-content-center">2
+                                    </div>
+                                    <div class="r-card-info d-flex">
+                                        <div class="r-photo">
+                                            <img src="assets/images/drivers/d2.png" alt="d2">
+                                        </div>
+                                        <div class="rank-info">
+                                            <h4 class="font-weight-bold text-primary mb-0">Charles Leclerc</h4>
+                                            <p><strong>Team: </strong>Ferrari</p>
+                                            <p><strong>Date of birth: </strong>16/10/1997</p>
+                                            <p><strong>Country: </strong>Monaco</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="rank-card">
+                                <a href="#">
+                                    <div class="r-number bg-warning d-flex align-items-center justify-content-center">3
+                                    </div>
+                                    <div class="r-card-info d-flex">
+                                        <div class="r-photo">
+                                            <img src="assets/images/drivers/d3.png" alt="d3">
+                                        </div>
+                                        <div class="rank-info">
+                                            <h4 class="font-weight-bold text-primary mb-0">Pierre Gasly</h4>
+                                            <p><strong>Team: </strong>Alpine</p>
+                                            <p><strong>Date of birth: </strong>07/02/1996</p>
+                                            <p><strong>Country: </strong>France</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /BANNER SECTION -->
+
+        <section id="page-wrap">
+            <div class="container-page">
+                <div class="row">
+                    <div class="home-articles order2">
+                        <div class="sub-title">
+                            <h3 class="subtitle text-uppercase float-start">Popular News</h3>
+                            <a href="#" class="view-more float-end">View More <em class="ti ti-angle-right"></em></a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a2.jpg" alt="a2">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>Red Bull boss Horner picks his most improved team from 2023 testing -
+                                                and explains</h4>
+                                            <span>11:35 am</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a4.jpg" alt="a4">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>Which of the 10 teams impressed you most in 2023 pre-season testing?
+                                            </h4>
+                                            <span>24 February 2023 12:40 pm</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a3.jpg" alt="a3">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>The AMR23 is inspired and innovative - but is Aston Martin's pace real?
+                                            </h4>
+                                            <span>24 February 2023 12:304 pm</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a1.jpg" alt="a1">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>Ocon says Alpine in a 'much better place' compared to last year as he
+                                                praises new team mate Gasly</h4>
+                                            <span>23 February 2023 01:30 pm</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a5.jpg" alt="a5">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>What we learned from Day 3 of pre-season testing in Bahrain</h4>
+                                            <span>22 February 2023 04:45 pm</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-md-6">
+                                <article class="article-box">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="assets/images/articles/a6.jpg" alt="a6">
+                                        </figure>
+                                        <div class="article-body">
+                                            <h4>F1 team bosses reveal pecking order predictions as McLaren</h4>
+                                            <span>22 February 2023 11:50 pm</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="home-aside order1">
+                        <div id="topHealines">
+                            <div class="box-panel">
+                                <div class="box-panel-body box-panel-small ">
+                                    <div class="sub-title">
+                                        <h3 class="subtitle mb-2 text-uppercase float-start">Top Headlines</h3>
+                                        <a href="#" class="view-more float-end">View More <em
+                                                class="ti ti-angle-right"></em></a>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="list-styled">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>Barbora Krejcikova takes down No. 1 Iga Swiatek in Dubai final
+                                                    </h4>
+                                                    <span>11:49 pm</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>Daniil Medvedev beats Andy Murray, wins Qatar Open title</h4>
+                                                    <span>11:40 pm</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>Coco Gauff win sets up Iga Swiatek meeting</h4>
+                                                    <span>24 Feb, 2023 10:30 am</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>John McEnroe, Bjorn Borg returning as Laver Cup captains</h4>
+                                                    <span>24 Feb, 2023 09:45 am</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>Serena Williams to receive honor at NAACP Image Awards</h4>
+                                                    <span>23 Feb, 2023 09:32 am</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>Aryna Sabalenka, Iga Swiatek, Madison Keys, Coco Gauff reach
+                                                        Dubai quarterfinals</h4>
+                                                    <span>22 Feb, 2023 12:40 pm</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads">
+                            <img src="assets/images/ads/ad1.jpg" alt="ad1">
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="fixtures">
+                <div class="fixture">
+                    <div class="owl-carousel custom-carousel owl-theme">
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/nethorland.jpg" alt="nethorland">
+                                        </div>
+                                        <div class="country">
+                                            <h3>Nethorland</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                25
+                                            </span>
+                                            <span class="month">
+                                                Aug
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023</h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">25 Aug 2023 - 27 Aug 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/hungary.jpg" alt="hungary">
+                                        </div>
+                                        <div class="country">
+                                            <h3>Hungary</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                21
+                                            </span>
+                                            <span class="month">
+                                                Jul
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 HUNGARIAN GRAND PRIX 2023</h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">21 Jul 2023 - 23 Jul 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/britain.jpg" alt="britain">
+                                        </div>
+                                        <div class="country">
+                                            <h3>Great Britain</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                07
+                                            </span>
+                                            <span class="month">
+                                                Jul
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023</h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">07 Jul 2023 - 09 Jul 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/singapore.jpg" alt="singapore">
+                                        </div>
+                                        <div class="country">
+                                            <h3>Singapore</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                15
+                                            </span>
+                                            <span class="month">
+                                                Sep
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023 </h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">15 Sep 2023 - 17 Sep 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/us.jpg" alt="us">
+                                        </div>
+                                        <div class="country">
+                                            <h3>United States</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                20
+                                            </span>
+                                            <span class="month">
+                                                Oct
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023</h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">20 Oct 2023 - 23 Oct 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fixture-card">
+                                <div class="fixture-show">
+                                    <div class="f-quick-info">
+                                        <div class="flag">
+                                            <img src="assets/images/flags/japan.jpg" alt="japan">
+                                        </div>
+                                        <div class="country">
+                                            <h3>Japan</h3>
+                                        </div>
+                                        <div class="fixture-date">
+                                            <span class="date">
+                                                22
+                                            </span>
+                                            <span class="month">
+                                                Sep
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div class="f-name">
+                                            <h2>FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023 </h2>
+                                        </div>
+                                        <div class="f-time-day">
+                                            <span class="font-18">22 Sep 2023 - 23 Sep 2023</span>
+                                        </div>
+                                        <div class="f-table">
+                                            <table class="table table-fixture text-start text-white">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Match</th>
+                                                        <th>Day</th>
+                                                        <th>Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Practice 1</td>
+                                                        <td>Friday</td>
+                                                        <td>16:00 - 17:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 2</td>
+                                                        <td>Friday</td>
+                                                        <td>19:30 - 20:30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Practice 3</td>
+                                                        <td>Saturday</td>
+                                                        <td>15:00 - 16:00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- /FIXTURES -->
+        </section>
+        <!-- /PAGE WRAP SECTION-->
+    </main>
+    <!-- /MAIN -->
+
+    <footer>
+        <div class="container-page">
+            <div class="row text-center">
+                <div class="col-md-12 pb-1"><small class="text-white opacity-5">
+                        &copy; 2003-2023 Racesport, All Rights Reserved
+                    </small></div>
+                <div class="col-md-12">
+                    <ul
+                        class="list-unstyled font-14 justify-content-center list-group list-group-horizontal position-relative w-100 ">
+                        <li><a href="#" class="text-white ms-3">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white ms-3">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <script src="assets/js/carousel.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

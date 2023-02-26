@@ -1,0 +1,147 @@
+@media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+        position: static !important
+    }
+
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        top: 80px;
+    }
+}
+
+@media (max-width:991px) {
+    .main-container {
+        margin-top: 70px
+    }
+
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px
+    }
+
+    header .nav-item {
+        border-top: 1px solid rgba(0, 0, 0, 0.1)
+    }
+
+    .custom-nav {
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px
+    }
+
+    .offcanvas-collapse {
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #f5f5f5;
+        transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out
+    }
+
+    .offcanvas-collapse.open {
+        visibility: visible;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+
+    .navbar .megamenu {
+        top: auto;
+    }
+
+    .megamenu .border-right {
+        border-right: 0 !important
+    }
+
+    .megamenu ul li {
+        border-top: 1px solid #dee2e6
+    }
+
+    .megamenu .menu-title {
+        padding-bottom: 8px
+    }
+
+    .has-megamenu.show::after {
+        display: none;
+    }
+
+    .banner {
+        padding: 20px 0;
+    }
+
+    .video-wrap, #slider {
+        margin-bottom: 10px;
+    }
+
+    .video iframe {
+        height: 360px;
+    }
+
+    .home-aside, .home-articles {
+        width: 100%;
+    }
+
+    .ads {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .fixtures {
+        margin: 10px 0 0;
+        padding: 10px;
+    }
+    .fixtures .owl-item {
+        margin: 0 5px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .video iframe {
+        height: 300px;
+    }
+
+}
+
+@media (max-width:575px) {
+    body, html {
+        font-size: 15px;
+    }
+
+    .video iframe {
+        height: 185px;
+    }
+
+    .video.stuck {
+        width: 220px;
+        height: 120px;
+    }
+
+    .fixtures .item.active {
+        width: 300px;
+    }
+
+}
